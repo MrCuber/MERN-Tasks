@@ -5,13 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Task List</title>
 <style>
+  ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
   body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
   }
-  h1 {
+  h1, h3 {
     text-align: center;
     padding: 20px;
   }
@@ -41,12 +59,24 @@
 </head>
 <body>
   <h1>Completed Tasks</h1>
+  <h3>HTML Tasks</h3>
   <table>
     <tr>
       <th>Tasks</th>
       <th>Task Link</th>
     </tr>
     <tbody id="tableBody">
+      
+    </tbody>
+  </table>
+
+  <h3>CSS Tasks</h3>
+  <table>
+    <tr>
+      <th>Tasks</th>
+      <th>Task Link</th>
+    </tr>
+    <tbody id="tableBody1">
       
     </tbody>
   </table>
